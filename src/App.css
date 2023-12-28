@@ -1,0 +1,59 @@
+/* Flow.css */
+
+/* Styles for the container holding the flow */
+.flow-container {
+  width: 100%;
+  height: 500px; /* Set your preferred height */
+}
+
+/* Styles for the text updater node */
+.text-updater-node {
+ 
+  height: 100px;
+  border: 1px solid #eee;
+  padding: 5px;
+  border-radius: 5px;
+  background: white;
+
+
+}
+
+/* Styles for the label within the text updater node */
+.text-updater-node label {
+  display: block;
+  color: #777;
+  font-size: 12px;
+}
+.text-updater-node button {
+  border: none;
+  display: block;
+  padding: 0.5em;
+  text-align: left;
+  width: 100%;
+}
+
+.text-updater-node button:hover {
+  background: white;
+}
+
+
+
+/* App.css */
+
+/* Define an animation named fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply the fadeIn animation to the edge path when it has the 'animated' class */
+.react-flow__edge-path.animated {
+  animation: fadeIn 0.5s ease-in-out forwards; /* Adjust animation properties as needed */
+}
+
+
+
